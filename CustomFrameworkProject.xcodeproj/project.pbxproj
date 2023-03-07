@@ -11,6 +11,7 @@
 		1FFDCA6929B76448008CA674 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1FFDCA6829B76448008CA674 /* ContentView.swift */; };
 		1FFDCA6B29B7644C008CA674 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FFDCA6A29B7644C008CA674 /* Assets.xcassets */; };
 		1FFDCA6E29B7644C008CA674 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FFDCA6D29B7644C008CA674 /* Preview Assets.xcassets */; };
+		1FFDCA7629B764A3008CA674 /* CustomFramework in Frameworks */ = {isa = PBXBuildFile; productRef = 1FFDCA7529B764A3008CA674 /* CustomFramework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FFDCA7629B764A3008CA674 /* CustomFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = CustomFrameworkProject;
+			packageProductDependencies = (
+				1FFDCA7529B764A3008CA674 /* CustomFramework */,
+			);
 			productName = CustomFrameworkProject;
 			productReference = 1FFDCA6329B76448008CA674 /* CustomFrameworkProject.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 1FFDCA5A29B76448008CA674;
+			packageReferences = (
+				1FFDCA7429B764A3008CA674 /* XCRemoteSwiftPackageReference "CustomFramework" */,
+			);
 			productRefGroup = 1FFDCA6429B76448008CA674 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -341,6 +349,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1FFDCA7429B764A3008CA674 /* XCRemoteSwiftPackageReference "CustomFramework" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/oscarmuntal/CustomFramework.git";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1FFDCA7529B764A3008CA674 /* CustomFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1FFDCA7429B764A3008CA674 /* XCRemoteSwiftPackageReference "CustomFramework" */;
+			productName = CustomFramework;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1FFDCA5B29B76448008CA674 /* Project object */;
 }
